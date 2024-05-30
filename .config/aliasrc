@@ -1,0 +1,30 @@
+#!/bin/sh
+
+alias ls="ls -hN --color=auto --group-directories-first"
+alias l="ls -ahls --color=auto"
+alias rm="rm -v"
+alias mv="mv -v"
+alias cp="cp -v"
+alias vi="vim"
+alias c='printf "\e[H\e[2J"'
+alias clear='printf "\e[H\e[2J"'
+alias ipa="ip -br -c a"
+alias '?'='duck'
+alias '??'='bing'
+alias '???'='google'
+alias xc='xclip -sel clip'
+alias YT="pipe-viewer"
+alias spo="sudo poweroff"
+alias download="curl -sSLOfk"
+alias ytv="yt-dlp -f bestvideo+bestaudio/best"
+alias yta="yt-dlp -x -f bestaudio/best"
+alias yt="yt-dlp --add-metadata -i"
+alias chmox="chmod u+x"
+alias zapit='/opt/zaproxy/zap.sh -cmd -zapit'
+alias psgrep='ps aux | grep -v grep | grep'
+alias view='vim -R'
+alias tcurl='curl --socks5-hostname 127.0.0.1:9050'
+alias tb='nc termbin.com 9999'
+alias ipp="curl -sL am.i.mullvad.net/json | jq '.'"
+alias rustscan='podman run -it --rm --name rustscan rustscan/rustscan:2.1.1'
+alias wclone="wget -mkEpnp"
