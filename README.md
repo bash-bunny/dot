@@ -5,6 +5,8 @@ Personal configuration and scripts for my Linux environment.
 It make use of:
 - [st terminal](https://st.suckless.org/) with the configuration from [LukeSmith st](https://github.com/lukesmithxyz/st)
 - [Spectrwm](https://github.com/conformal/spectrwm) with vim keybindings
+- [Vim](https://www.vim.org/) the best editor possible
+- [Tmux](https://github.com/tmux/) the best terminal multiplexor
 
 ## Packages
 
