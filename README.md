@@ -38,6 +38,11 @@ As with vim it has *normal* and *editing* mode
 
 - `Alt+l` - Launch the URL selected from `dmenu` in the default browser
 - `Alt+y` - Yank the URL selected from `dmenu`
+- `Alt+o` - Copy the output of the last command
+- `Alt+u` - Scroll up half of a page in the terminal
+- `Alt+d` - Scroll down half of a page in the terminal
+- `Alt+Shift+k` - Increase font size
+- `Alt+Shift+j` - Decrease font size
 
 #### Normal mode
 
