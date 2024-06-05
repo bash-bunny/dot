@@ -1,0 +1,7 @@
+xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
+feh --bg-fill --no-fehbg ~/Pictures/wallpapers/sakura.jpg &
+unclutter -b --hide-on-touch --start-hidden &
+setxkbmap us -variant colemak &
+#gammastep -l 40.41:-3.70 -t 5700:4600 -g 0.8 -m randr &
+gammastep -P -O 4900 -m randr &
+dunst &
