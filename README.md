@@ -34,6 +34,8 @@ All files should go into the `$HOME` directory of the user
 
 All my workflow is based on `tmux` and `vim` with the `st` terminal, and `qutebrowser` and `lynx` for navigate the web
 
+**Note**: always you can use the `Ctrl+[` combination to escape the current mode and go back into the normal mode, it acts as the `Esc` key
+
 ### Terminal keybindings
 
 As with vim it has *normal* and *editing* mode
@@ -66,3 +68,23 @@ As with vim it has *normal* and *editing* mode
 - `Esc` - Exit *Editing* mode and enter *normal* mode
 - `Alt+k` - Exit *Editing* mode and go back in history
 - `Alt+j` - Exit *Editing* mode and go forward in history
+
+### Tmux keybindings
+
+- `Ctrl+a` - Master combination to start introducing commands
+- `Master+-` - Split panes horizontally
+- `Master+|` - Split panes vertically
+- `Master+c` - Create new tab
+- `Master+a` - Go between the last tab and the actual one
+- `Master+&` - Kill the actual tab
+- `Master+j` - Go to the bottom pane
+- `Master+k` - Go to the upper pane
+- `Master+l` - Go to the right pane
+- `Master+h` - Go to the left pane
+- `Master+q` - Show numbers in all the panes and select any number to change pane
+- `Master+t` - Show the current hour
+- `Master+s` - Show all the tmux sessions and select one with vim keybindings
+- `Master+[` - Enter visual mode
+  - `Space` - Select text in visual mode
+  - `Enter` - Copy into the tmux buffer the text selected and exit the visual mode
+- `Master+]` - Paste the selected text
