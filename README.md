@@ -7,6 +7,7 @@ It make use of:
 - [Spectrwm](https://github.com/conformal/spectrwm) with vim keybindings
 - [Vim](https://www.vim.org/) the best editor possible
 - [Tmux](https://github.com/tmux/) the best terminal multiplexor
+- [gf](https://github.com/tomnomnom/gf) wrapper around grep to search for interesting things
 
 ## Packages
 
@@ -18,6 +19,12 @@ It make use of:
 
 
 ## Installation
+
+Clone the repo in your `$HOME` directory
+
+```bash
+git clone https://github.com/deads3c/dot.git
+```
 
 ### Terminal
 
