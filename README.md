@@ -7,11 +7,14 @@ It make use of:
 - [Spectrwm](https://github.com/conformal/spectrwm) with vim keybindings
 - [Vim](https://www.vim.org/) the best editor possible
 - [Tmux](https://github.com/tmux/) the best terminal multiplexor
+- [Qutebrowser](https://qutebrowser.org/index.html) vim navigation browser
+- [Lynx](https://lynx.invisible-island.net/) a terminal browser
 - [gf](https://github.com/tomnomnom/gf) wrapper around grep to search for interesting things
 
 ## Packages
 
-- `dmenu` - Minimal menu for launching applications
+You will need the following packages for the full experience:
+- `dmenu` - Minimal menu for launching applications with support for passwords
 - `st` - Minimal and fast terminal
 - `tmux` - Best terminal multiplexor
 - `spectrwm` - Minimal window manager
@@ -26,20 +29,23 @@ Clone the repo in your `$HOME` directory
 git clone https://github.com/deads3c/dot.git
 ```
 
-### Terminal
+### Programs
 
 ```bash
 cd st
+sudo make install
+
+cd ../dmenu
 sudo make install
 ```
 
 ### Configuration Files
 
-All files should go into the `$HOME` directory of the user
+All files should go into the `$HOME` directory of your user
 
 ## Usage
 
-All my workflow is based on `tmux` and `vim` with the `st` terminal, and `qutebrowser` and `lynx` for navigate the web
+All my workflow is based on `vim` keybindings for everything, including the terminal and the browser. I make use of `tmux` in the terminal as a multiplexer, `qutebrowser` and `lynx` to search the web.
 
 **Note**: always you can use the `Ctrl+[` combination to escape the current mode and go back into the normal mode, it acts as the `Esc` key
 
@@ -95,3 +101,27 @@ As with vim it has *normal* and *editing* mode
   - `Space` - Select text in visual mode
   - `Enter` - Copy into the tmux buffer the text selected and exit the visual mode
 - `Master+]` - Paste the selected text
+
+### Lynx keybindings
+
+- `j,k` - Goes down and up on every link on a webpage
+- `l` - Follow a link
+- `h` - Goes back in the history
+- `i` - Open information about the webpage
+- `,` - Open the actual URL in the default browser
+- `q` - Quit the browser
+
+#### Scripts
+
+There are a couple of scripts to search using duckduckgo, google and bing, which are mapped to `?`, `??`, `???` respectively
+
+```bash
+# Search using duckduckgo
+? which is lynx in GNU
+
+# Search using google
+?? how can I map a domain
+
+# Search using bing
+??? how to use nmap
+```
