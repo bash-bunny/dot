@@ -1,7 +1,19 @@
+# Transparency
 xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
-feh --bg-fill --no-fehbg ~/Pictures/wallpapers/sakura.jpg &
-unclutter -b --hide-on-touch --start-hidden &
+# Wallpaper
+feh --bg-fill --no-fehbg ~/Pictures/wallpapers/wallpaper-girl.jpg
+# Hide cursor
+unclutter -b --hide-on-touch --start-hidden --ignore-scrolling &
+# Keymap
 setxkbmap us -variant colemak &
 #gammastep -l 40.41:-3.70 -t 5700:4600 -g 0.8 -m randr &
-gammastep -P -O 4900 -m randr &
+# Blue light
+gammastep -P -O 4800 -m randr &
+# Disable Trackpoint thinkpad
+xinput set-prop "TPPS/2 Elan TrackPoint" "Device Enabled" 0 &
+# Disable touchscreen
+xinput set-prop "ELAN901C:00 04F3:2C71" "Device Enabled" 0 &
+# Notifications
 dunst &
+# Launch pipwire
+gentoo-pipewire-launcher &
