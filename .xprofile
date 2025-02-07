@@ -1,7 +1,7 @@
 # Transparency
 xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
 # Wallpaper
-feh --bg-fill --no-fehbg ~/Pictures/wallpapers/samurai.jpg
+feh --bg-fill --no-fehbg ~/Pictures/wallpapers/cyberpunk_city.png
 # Hide cursor
 unclutter -b --hide-on-touch --start-hidden --ignore-buttons 4,5,6,7 &
 # Completely disable the mouse when writting
@@ -10,7 +10,7 @@ syndaemon -i 0.5 -K -R -d &
 setxkbmap us -variant colemak &
 #gammastep -l 40.41:-3.70 -t 5700:4600 -g 0.8 -m randr &
 # Blue light
-gammastep -P -O 4800 -m randr &
+gammastep -P -O 4600 -m randr &
 # Disable Trackpoint thinkpad
 xinput set-prop "TPPS/2 Elan TrackPoint" "Device Enabled" 0 &
 # Disable touchscreen

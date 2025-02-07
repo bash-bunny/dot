@@ -51,7 +51,7 @@ All my workflow is based on `vim` keybindings for everything, including the term
 
 ### Terminal keybindings
 
-As with vim it has *normal* and *editing* mode
+As with vim it has *normal* and *editing* mode.
 
 - `Alt+l` - Launch the URL selected from `dmenu` in the default browser
 - `Alt+y` - Yank the URL selected from `dmenu`
@@ -75,6 +75,7 @@ As with vim it has *normal* and *editing* mode
 - `C` - Delete the text from within the cursor until the end of the line and enter *Editing* mode
 - `D` - Delete the text from within the cursor until the end of the line
 - `cw` - Delete the word under the cursor and enter *Editing* mode
+- `v` - Open the command in vim to edit it and execute it
 
 #### Edit Mode
 
