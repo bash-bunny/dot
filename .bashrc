@@ -85,7 +85,7 @@ export TERMINAL="st"
 export BROWSER="qutebrowser"
 export READER="zathura"
 export FILE="ranger"
-export GITUSER="deads3c"
+export GITUSER="bash-bunny"
 export REPOS="$HOME/Repos"
 source $HOME/.gf/gf-completion.bash
 
