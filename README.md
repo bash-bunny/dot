@@ -26,7 +26,7 @@ You will need the following packages for the full experience:
 Clone the repo in your `$HOME` directory
 
 ```bash
-git clone https://github.com/deads3c/dot.git
+git clone https://github.com/bash-bunny/dot.git
 ```
 
 ### Programs
