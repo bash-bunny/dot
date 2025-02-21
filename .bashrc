@@ -85,9 +85,12 @@ export TERMINAL="st"
 export BROWSER="qutebrowser"
 export READER="zathura"
 export FILE="ranger"
+export SUDO_ASKPASS="/home/tuxy/.local/bin/dmenupass"
 export GITUSER="bash-bunny"
 export REPOS="$HOME/Repos"
 source $HOME/.gf/gf-completion.bash
+## CDPATH
+export CDPATH=".:$HOME:$HOME/scripts:$HOME/Documents/"
 
 # Pomodoro from https://github.com/rwxrob/pomo
 complete -C pomo pomo
@@ -133,4 +136,19 @@ fi
 screenlayout="$HOME/.screenlayout"
 if ! [[ $PATH =~ "$screenlayout" ]]; then
 	export PATH="$PATH:$screenlayout"
+fi
+## Rust packages
+rustpath="/root/.cargo/bin"
+if ! [[ $PATH =~ "$rustpath" ]]; then
+	export PATH="$PATH:$rustpath"
+fi
+## User Rust packages
+urustpath="~/.cargo/bin"
+if ! [[ $PATH =~ "$urustpath" ]]; then
+	export PATH="$PATH:$urustpath"
+fi
+## Home bin (for ruby packages)
+homebin="~/bin"
+if ! [[ $PATH =~ "$homebin" ]]; then
+	export PATH="$PATH:$homebin"
 fi
