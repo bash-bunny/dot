@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl -skIL "$1" | grep -i location | awk '{print $2}'
