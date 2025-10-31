@@ -39,7 +39,7 @@ cpu() {
 #}
 
 vol() {
-	vol="$(amixer -D default get Master | awk -F'[][]' 'END{ print $2 }')"
+	vol="$(pamixer --get-volume-human)"
 	echo -e "$vol"
 }
 
@@ -106,12 +106,12 @@ bat() {
 #NETWORK
 
 network() {
-    wire="$(ip a | grep enp0s3 | grep inet | wc -l)"
+    wire="$(ip a | grep eth0 | grep inet | wc -l)"
     wifi="$(ip a | grep wlan0 | grep inet | wc -l)"
 
     if [ $wire = 1 ]; then
-        ip="$(ip a | grep enp0s13f0u1 | grep inet | awk '{print $2}')"
-        echo "$ip "
+        ip="$(ip a | grep eth0 | grep inet | awk '{print $2}')"
+        echo " $ip"
     elif [ $wifi = 1 ]; then
         echo ""
     else
@@ -119,11 +119,18 @@ network() {
     fi
 }
 
+#UPGRADES
+
+upgrades() {
+	packages=$(wc -l $HOME/Upgrades/packages.txt | awk '{print $1}')
+	echo "$packages"
+}
+
 #BAR
 
 #SLEEP_SEC=2
 #loops forever outputting a line every SLEEP_SEC secs
     while :; do
-        echo "$(cpu) |  $(mem) |  $(hdd) |  $(vpn) |  $(vol) | $(network) | $(bat) |"
+        echo " $(upgrades) | $(cpu) |  $(mem) |  $(hdd) |  $(vpn) |  $(vol) | $(network) |"
         sleep $SLEEP_SEC
     done
