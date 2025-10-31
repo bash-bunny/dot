@@ -1,8 +1,8 @@
 #!/bin/bash
 
-winclass="$(xdotool search --class scratchpad)"
+winclass="$(xdotool search --classname scratchpad)"
 if [ -z "$winclass" ]; then
-	st -c scratchpad
+	urxvtc -name scratchpad
 else
 	if [ ! -f /tmp/scratchpad ]; then
 		touch /tmp/scratchpad && xdo hide "$winclass"
