@@ -1,0 +1,2 @@
+#!/bin/bash
+dmenu_run -nb '#000000' -nf '#A0A0A0' -sb '#157c78' -sf '#000000' -p run -fn 'JetBrainsMonoMedium Nerd Font:size=10:antialias=true'

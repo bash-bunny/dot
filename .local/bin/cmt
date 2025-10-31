@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Script to insert caracteres at the beggining of the lines
+# Usage: cmt '// ' Insert // at the beggining
+# Usage: cmt '\# ' Insert # at the beggining
+
+while IFS= read -r line; do
+  echo "${1:-#} $line"
+done

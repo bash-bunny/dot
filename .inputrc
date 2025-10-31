@@ -1,0 +1,5 @@
+# For changing the prompt on the shell depending on the vim mode
+set show-mode-in-prompt on
+set vi-cmd-mode-string "\1\e\[2 q\2"
+set vi-ins-mode-string "\1\e\[6 q\2"
+"\C-H":"\C-W"

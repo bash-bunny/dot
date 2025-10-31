@@ -1,0 +1,10 @@
+#!/bin/bash
+
+rootdir='/'
+
+include='^/(home|etc|dev)'
+exclude='(.mozilla|.qutebrowser|.local/share|.cache|.ZAP|.java)'
+
+find "$rootdir" -type f -mtime 0 2>/dev/null | \
+	grep -E "$include" | \
+	grep -vE "$exclude"

@@ -1,0 +1,33 @@
+# Xineramma
+~/.screenlayout/default.sh &
+# Transparency
+xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
+# Wallpaper
+feh --bg-fill --no-fehbg ~/Pictures/Wallpapers/abstract-orange.jpg
+# Hide cursor
+unclutter -b --hide-on-touch --start-hidden --ignore-buttons 4,5,6,7 &
+# Completely disable the mouse when writting
+#syndaemon -i 0.5 -K -R -d &
+# Keymap
+setxkbmap us -variant colemak &
+#gammastep -l 40.41:-3.70 -t 5700:4600 -g 0.8 -m randr &
+# Blue light
+gammastep -P -O 500 -m randr &
+# Disable Trackpoint thinkpad
+#xinput set-prop "TPPS/2 Elan TrackPoint" "Device Enabled" 0 &
+# Disable touchscreen
+#xinput set-prop "ELAN901C:00 04F3:2C71" "Device Enabled" 0 &
+# Automatically scan files downloaded in Downloads Folder
+#nohup ~/.local/bin/scan_downloads.sh &>/dev/null &
+# Notifications
+dunst &
+# Music
+mpd &
+# Urxvt daemon
+urxvtd -q -f -o &
+# Responsive terminal
+xset r rate 300 50 &
+# Disable bell
+xset b off
+# SSH agent
+eval "$(ssh-agent -s)"

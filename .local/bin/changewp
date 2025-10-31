@@ -1,0 +1,10 @@
+#!/bin/bash
+
+wp=$(ls ~/Pictures/wallpapers)
+
+chosen=$(echo "$wp" | dmenu -p "Which wallpaper?" -i)
+
+if [[ $chosen ]]; then
+	feh --bg-fill --no-fehbg ~/Pictures/wallpapers/$chosen
+	sed -i "s/wallpapers\/.*/wallpapers\/$chosen/" ~/.xprofile
+fi
